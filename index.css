@@ -216,9 +216,10 @@
  .u-section-2 .u-image-1 {
    width: 239px;
    height: 239px;
-   background-image: url("images/vbb.jpg");
-   background-position: 50% 50%;
+   background-image: url("images/amin.png");
+   background-position: 50% 20%;
    margin: 0 auto;
+   border: 3px solid #dadada;
  }
 
  .u-section-2 .u-layout-cell-3 {
