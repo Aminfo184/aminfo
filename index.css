@@ -1709,3 +1709,12 @@
  .hidden-image {
    overflow: hidden;
  }
+
+@media (max-width: 991px) {
+ .u-layout-wrap {
+    margin-left: 0;
+    padding: 2px 62px;
+    width: 100%;
+ }
+ 
+}
