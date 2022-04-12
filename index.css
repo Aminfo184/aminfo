@@ -38,7 +38,7 @@
  .img-amin {
    min-height: 500px;
    background-position: 50% 50%;
-   width: 31vw;
+   width: 100%;
  }
 
  .u-section-1 .u-container-layout-2 {
@@ -1712,9 +1712,9 @@
 
 @media (max-width: 991px) {
  .u-layout-wrap {
-    margin-left: 0;
+    margin-left: 0 !important;
     padding: 2px 62px;
-    width: 100%;
+    width: 100% !important;
  }
  
 }
