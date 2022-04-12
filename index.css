@@ -1,5 +1,6 @@
  .u-section-1 {
    background-color: #eaf5f9;
+   height: calc(100vh - 80px);
  }
 
  .u-section-1 .u-layout-wrap-1 {
@@ -32,13 +33,14 @@
    font-weight: 600;
    font-size: 1rem;
    font-style: normal;
+   text-align: justify;
    margin: 17px 0 0;
  }
 
  .img-amin {
    min-height: 500px;
    background-position: 50% 50%;
-   width: 100%;
+   width: 31vw;
  }
 
  .u-section-1 .u-container-layout-2 {
@@ -1715,6 +1717,10 @@
     margin-left: 0 !important;
     padding: 0 25px;
     width: 100% !important;
+ }
+ 
+ .img-amin {
+   width: 100%;
  }
  
 }
