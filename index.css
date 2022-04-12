@@ -1713,7 +1713,7 @@
 @media (max-width: 991px) {
  .u-layout-wrap {
     margin-left: 0 !important;
-    padding: 2px 62px;
+    padding: 0 25px;
     width: 100% !important;
  }
  
