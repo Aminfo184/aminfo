@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <style
+        data-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Roboto+Slab:wght@300;400;500;600;700;800;900&amp;display=swap">
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1g.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJM.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1g.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1g.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1g.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4OWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOWaw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+    </style>
+    <title> Aminfo | Mohammad Amin Forati </title>
+</head>
+
+<body class="bg-light dark:bg-dark transition-all duration-300 w-screen overflow-x-hidden select-none"
+    x-data="{activeTab: $persist(0).using(sessionStorage)}">
+
+    <header class="sticky top-0 lg:static z-10">
+
+        <section
+            class="flex items-center justify-between px-8 lg:px-0 lg:justify-around h-20 lg:h-36 text-[#44566c] font-medium bg-slate-200 dark:bg-slate-900 lg:dark:bg-transparent lg:bg-transparent bg-opacity-50 dark:bg-opacity-60 dark:backdrop-blur-md backdrop-blur-md lg:backdrop-blur-none lg:dark:backdrop-blur-none relative"
+            x-data="{openMenu : false}">
+
+            <!-- Logo -->
+            <section>
+                <h1 class="text-[#3a9bdc] dark:text-[#3a9bdc] font-bold text-3xl">aminfo</h1>
+            </section>
+
+            <section class="flex justify-between items-center gap-2 lg:gap-6 z-10" @click.outside="openMenu = false">
+                <!-- Menu -->
+                <nav class="absolute lg:h-auto lg:static top-20 left-0 right-0 dark:bg-slate-900 bg-slate-100 w-full rounded-b-2xl px-3 lg:bg-transparent lg:dark:bg-transparent lg:p-0 overflow-hidden transition-all ease-in-out duration-500"
+                    :class="{'h-0' :  openMenu === false, 'h-[214px]' : openMenu === true}" @click="openMenu = false"
+                    x-cloak>
+                    <ul class="flex flex-col lg:flex-row justify-center items-center gap-2 xl:gap-5 py-4">
+                        <li class="py-2.5 px-5 rounded-md text-sm cursor-pointer w-full lg:w-auto"
+                            :class="{ 'active' : activeTab === 0, 'non-active' : activeTab !== 0}"
+                            @click="activeTab = 0">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                </svg>
+                                Home
+                            </span>
+                        </li>
+                        <li class="py-2.5 px-5 rounded-md text-sm cursor-pointer w-full lg:w-auto"
+                            :class="{ 'active' : activeTab === 1, 'non-active' : activeTab !== 1}"
+                            @click="activeTab = 1">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                </svg>
+                                About
+                            </span>
+                        </li>
+                        <li class="py-2.5 px-5 rounded-md text-sm cursor-pointer w-full lg:w-auto"
+                            :class="{ 'active' : activeTab === 2, 'non-active' : activeTab !== 2}"
+                            @click="activeTab = 2">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                                </svg>
+                                Resium
+                            </span>
+                        </li>
+                        <!-- <li class="py-2.5 px-5 rounded-md text-sm cursor-pointer w-full lg:w-auto"
+                            :class="{ 'active' : activeTab === 3, 'non-active' : activeTab !== 3}"
+                            @click="activeTab = 3">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                                </svg>
+
+                                Works
+                            </span>
+                        </li>
+                        <li class="py-2.5 px-5 rounded-md text-sm cursor-pointer w-full lg:w-auto"
+                            :class="{ 'active' : activeTab === 4, 'non-active' : activeTab !== 4}"
+                            @click="activeTab = 4">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                </svg>
+
+                                Blogs
+                            </span>
+                        </li> -->
+                        <li class="py-2.5 px-5 rounded-md text-sm cursor-pointer w-full lg:w-auto"
+                            :class="{ 'active' : activeTab === 5, 'non-active' : activeTab !== 5}"
+                            @click="activeTab = 5">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+
+                                Contact
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Tools -->
+                <section>
+                    <!-- DarkMode -->
+                    <section x-data="darkMode()">
+
+                        <!-- Moon -->
+                        <span class="moon block" @click="makeDark()">
+                            <svg class="w-6 h-6 animate-wiggle" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+
+                        <!-- Sun -->
+                        <span class="sun block" @click="makeLight()">
+                            <svg class="w-6 h-6 animate-wiggle" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                            </svg>
+                        </span>
+                    </section>
+                </section>
+
+                <section @click="openMenu = ! openMenu"
+                    class="lg:hidden bg-white dark:bg-slate-800 dark:text-slate-300 p-2.5 dark:hover:bg-[#3a9bdc] hover:bg-[#3a9bdc] rounded-full hover:text-white dark:hover:text-white transition-colors duration-300 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </section>
+            </section>
+        </section>
+
+    </header>
+
+    <main class="sm:pb-16 flex relative z-0 overflow-x-hidden">
+        <section x-show="activeTab === 0" class="container flex flex-col justify-center items-center gap-5"
+            x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100" x-cloak>
+            <section>
+                <img src="./images/profile.jpg" class="w-60 h-60 md:w-72 md:h-72 rounded-full" alt="">
+            </section>
+            <section class="flex flex-col">
+                <h3 class="font-semibold text-2xl mb-1 text-black dark:text-white text-center">Mohammad <span
+                        class="text-[#3a9bdc] dark:text-[#29c5f6]">Amin Fo</span>rati</h3>
+                <p class="text-[#7b7b7b] dark:text-slate-300 text-center">Web Designer & Developer</p>
+            </section>
+            <section class="flex justify-center items-center gap-3">
+                <!-- Gitlab -->
+                <a href="https://gitlab.com/Aminfo" target="_blank"
+                    class="flex items-center justify-center group w-10 h-10 rounded-lg hover:bg-[#3a9bdc] dark:hover:bg-[#3a9bdc] bg-white dark:bg-slate-800 transition-colors duration-300">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 236" width="1em" height="1em">
+                            <path class="group-hover:fill-white fill-[#e24329]"
+                                d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z" class="colorE24329 svgShape">
+                            </path>
+                            <path class="group-hover:fill-white fill-[#fc6d26]"
+                                d="M128.075 236.074L80.97 91.104H14.956l113.119 144.97z" class="colorFC6D26 svgShape">
+                            </path>
+                            <path class="group-hover:fill-white fill-[#fca326]"
+                                d="M14.956 91.104L.642 135.16a9.752 9.752 0 0 0 3.542 10.903l123.891 90.012-113.12-144.97z"
+                                class="colorFCA326 svgShape"></path>
+                            <path class="group-hover:fill-white fill-[#e24329]"
+                                d="M14.956 91.105H80.97L52.601 3.79c-1.46-4.493-7.816-4.492-9.275 0l-28.37 87.315z"
+                                class="colorE24329 svgShape"></path>
+                            <path class="group-hover:fill-white fill-[#fc6d26]"
+                                d="M128.075 236.074l47.104-144.97h66.015l-113.12 144.97z" class="colorFC6D26 svgShape">
+                            </path>
+                            <path class="group-hover:fill-white fill-[#fca326]"
+                                d="M241.194 91.104l14.314 44.056a9.752 9.752 0 0 1-3.543 10.903l-123.89 90.012 113.119-144.97z"
+                                class="colorFCA326 svgShape"></path>
+                            <path class="group-hover:fill-white fill-[#e24329]"
+                                d="M241.194 91.105h-66.015l28.37-87.315c1.46-4.493 7.816-4.492 9.275 0l28.37 87.315z"
+                                class="colorE24329 svgShape"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Github -->
+                <a href="https://github.com/Aminfo184" target="_blank"
+                    class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-[#3a9bdc] dark:hover:bg-[#3a9bdc] bg-white dark:bg-slate-800 hover:fill-white dark:hover:fill-white fill-black dark:fill-slate-500 transition-colors duration-300">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em">
+                            <path
+                                d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z">
+                            </path>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/aminfo.dev" target="_blank"
+                    class="flex items-center justify-center group w-10 h-10 rounded-lg hover:bg-[#3a9bdc] dark:hover:bg-[#3a9bdc] bg-white dark:bg-slate-800 transition-colors duration-300">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.996 102" width="1em" height="1em">
+                            <defs>
+                                <radialGradient id="a" cx="13.551" cy="102.482" r="133.147"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".09" stop-color="#fa8f21"></stop>
+                                    <stop offset=".78" stop-color="#d82d7e"></stop>
+                                </radialGradient>
+                                <radialGradient id="b" cx="61.859" cy="107.051" r="104.938"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
+                                    <stop offset="1" stop-color="#8c3aaa"></stop>
+                                </radialGradient>
+                            </defs>
+                            <path fill="url(#a)" class="group-hover:fill-white"
+                                d="M34 51a17 17 0 1 1 17 17 17 17 0 0 1-17-17m-9.191 0A26.188 26.188 0 1 0 51 24.812 26.187 26.187 0 0 0 24.812 51M72.1 23.774a6.12 6.12 0 1 0 6.122-6.118 6.123 6.123 0 0 0-6.12 6.118M30.4 92.513a28.187 28.187 0 0 1-9.471-1.754 15.85 15.85 0 0 1-5.866-3.815 15.735 15.735 0 0 1-3.815-5.862 28.161 28.161 0 0 1-1.758-9.471c-.247-5.376-.3-6.991-.3-20.61s.053-15.23.3-20.61a28.374 28.374 0 0 1 1.754-9.471 15.85 15.85 0 0 1 3.815-5.866 15.718 15.718 0 0 1 5.866-3.815A28.161 28.161 0 0 1 30.4 9.484c5.376-.247 6.991-.3 20.6-.3s15.23.053 20.61.3a28.373 28.373 0 0 1 9.471 1.754 15.8 15.8 0 0 1 5.866 3.815 15.8 15.8 0 0 1 3.815 5.866 28.162 28.162 0 0 1 1.754 9.471c.247 5.38.3 6.991.3 20.61s-.049 15.23-.3 20.61a28.294 28.294 0 0 1-1.754 9.471 16.886 16.886 0 0 1-9.681 9.677 28.161 28.161 0 0 1-9.471 1.754c-5.376.247-6.991.3-20.61.3s-15.23-.049-20.6-.3M29.974.309a37.4 37.4 0 0 0-12.379 2.369A25.015 25.015 0 0 0 8.56 8.56a24.918 24.918 0 0 0-5.883 9.034 37.407 37.407 0 0 0-2.368 12.38C.058 35.412 0 37.15 0 51s.058 15.588.309 21.026a37.405 37.405 0 0 0 2.369 12.379A24.931 24.931 0 0 0 8.56 93.44a25.076 25.076 0 0 0 9.034 5.883 37.43 37.43 0 0 0 12.379 2.369c5.441.247 7.176.309 21.026.309s15.588-.058 21.026-.309a37.405 37.405 0 0 0 12.379-2.369 26.075 26.075 0 0 0 14.918-14.918 37.3 37.3 0 0 0 2.369-12.379c.247-5.442.3-7.176.3-21.026s-.058-15.588-.3-21.026a37.394 37.394 0 0 0-2.369-12.379A25.08 25.08 0 0 0 93.44 8.56a24.955 24.955 0 0 0-9.03-5.883A37.347 37.347 0 0 0 72.03.309C66.593.062 64.854 0 51 0S35.41.058 29.97.309"
+                                data-name="Path 14"></path>
+                            <path fill="url(#b)" class="group-hover:fill-white"
+                                d="M34 51a17 17 0 1 1 17 17 17 17 0 0 1-17-17m-9.191 0A26.188 26.188 0 1 0 51 24.812 26.187 26.187 0 0 0 24.812 51M72.1 23.774a6.12 6.12 0 1 0 6.122-6.118 6.123 6.123 0 0 0-6.12 6.118M30.4 92.513a28.187 28.187 0 0 1-9.471-1.754 15.85 15.85 0 0 1-5.866-3.815 15.735 15.735 0 0 1-3.815-5.862 28.161 28.161 0 0 1-1.758-9.471c-.247-5.376-.3-6.991-.3-20.61s.053-15.23.3-20.61a28.374 28.374 0 0 1 1.754-9.471 15.85 15.85 0 0 1 3.815-5.866 15.718 15.718 0 0 1 5.866-3.815A28.161 28.161 0 0 1 30.4 9.484c5.376-.247 6.991-.3 20.6-.3s15.23.053 20.61.3a28.373 28.373 0 0 1 9.471 1.754 15.8 15.8 0 0 1 5.866 3.815 15.8 15.8 0 0 1 3.815 5.866 28.162 28.162 0 0 1 1.754 9.471c.247 5.38.3 6.991.3 20.61s-.049 15.23-.3 20.61a28.294 28.294 0 0 1-1.754 9.471 16.886 16.886 0 0 1-9.681 9.677 28.161 28.161 0 0 1-9.471 1.754c-5.376.247-6.991.3-20.61.3s-15.23-.049-20.6-.3M29.974.309a37.4 37.4 0 0 0-12.379 2.369A25.015 25.015 0 0 0 8.56 8.56a24.918 24.918 0 0 0-5.883 9.034 37.407 37.407 0 0 0-2.368 12.38C.058 35.412 0 37.15 0 51s.058 15.588.309 21.026a37.405 37.405 0 0 0 2.369 12.379A24.931 24.931 0 0 0 8.56 93.44a25.076 25.076 0 0 0 9.034 5.883 37.43 37.43 0 0 0 12.379 2.369c5.441.247 7.176.309 21.026.309s15.588-.058 21.026-.309a37.405 37.405 0 0 0 12.379-2.369 26.075 26.075 0 0 0 14.918-14.918 37.3 37.3 0 0 0 2.369-12.379c.247-5.442.3-7.176.3-21.026s-.058-15.588-.3-21.026a37.394 37.394 0 0 0-2.369-12.379A25.08 25.08 0 0 0 93.44 8.56a24.955 24.955 0 0 0-9.03-5.883A37.347 37.347 0 0 0 72.03.309C66.593.062 64.854 0 51 0S35.41.058 29.97.309"
+                                data-name="Path 15"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/mohammad-amin-forati" target="_blank"
+                    class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-[#3a9bdc] dark:hover:bg-[#3a9bdc] bg-white dark:bg-slate-800 hover:fill-white fill-[#0072b1] transition-colors duration-300">
+                    <span>
+                        <svg viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                            </path>
+                        </svg>
+                    </span>
+                </a>
+            </section>
+            <section>
+                <a href=""
+                    class="flex gap-2 bg-gradient-to-r from-[#29c5f6] to-[#3a9bdc] hover:from-[#3a9bdc] hover:to-[#29c5f6] rounded-full text-white py-3 px-7 text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download CV
+                </a>
+            </section>
+        </section>
+
+        <section x-show="activeTab === 1"
+            class="container flex flex-col justify-center items-center gap-5 sm:mt-10 lg:mt-0"
+            x-transition:enter="transition ease-out duration-300 origin-top"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-cloak>
+            <section class="bg-white dark:bg-slate-800 sm:rounded-2xl sm:mx-10 w-full lg:w-10/12">
+                <section class="py-6 px-4 sm:py-12 sm:px-20">
+                    <h2
+                        class="relative salb text-black dark:text-white inline-block text-4xl font-semibold after:w-0 sm:after:w-64 after:h-[1.5px] after:absolute after:left-48 after:top-6 after:bg-gradient-to-r after:from-[#29c5f6] after:to-[#3a9bdc] after:rounded-full">
+                        About me</h2>
+                </section>
+
+                <section class="grid grid-cols-12 pb-12 px-4 sm:px-20">
+                    <section class="col-span-12 md:col-span-4 md:px-3">
+                        <img src="./images/aminfo.jpg" alt="" class="h-full rounded-3xl object-cover">
+                    </section>
+
+                    <section class="col-span-12 md:col-span-8 md:px-3 py-5 md:py-3">
+                        <section>
+                            <h3 class="text-2xl font-medium dark:text-white mb-2.5">Who am i?</h3>
+                            <p class="text-[#44566c] dark:text-[#a6a6a6] leading-7 text-justify">
+                                I am an enthusiastic young person with smart ideas for web application design.
+                                I live in Bandar Abbas city in Iran and I would like to cooperate with any other city or
+                                country for more experience in
+                                building dynamic web pages.
+                            </p>
+                            <p class="text-[#44566c] leading-7 mt-2.5 dark:text-[#a6a6a6] text-justify">
+                                I am enthusiastic about the latest and advanced technologies in creating web pages and I
+                                always try to keep myself up to
+                                date.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3 class="text-2xl font-medium my-5 dark:text-white">Personal Info</h3>
+                            <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <section class="flex">
+                                    <span
+                                        class="text-red-500 dark:bg-slate-700 shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 min-w-[3rem] h-12">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                    </span>
+                                    <section class="space-y-1 overflow-hidden">
+                                        <p class="text-xs text-slate-500 dark:text-slate-300">Phone</p>
+                                        <h6 class="font-medium dark:text-white truncate">
+                                            <a class="hover:text-[#3a9bdc] duration-300 transition"
+                                                href="tel:+989022218241">+98 902 221 8241</a>
+                                        </h6>
+                                    </section>
+                                </section>
+                                <section class="flex">
+                                    <span
+                                        class="text-purple-500 dark:bg-slate-700 shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 min-w-[3rem] h-12">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                        </svg>
+                                    </span>
+                                    <section class="space-y-1 overflow-hidden">
+                                        <p class="text-xs text-slate-500 dark:text-slate-300">Location</p>
+                                        <h6 class="font-medium dark:text-white truncate">IRAN Bandar-Abbas</h6>
+                                    </section>
+                                </section>
+                                <section class="flex">
+                                    <span
+                                        class="text-teal-500 dark:bg-slate-700 shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 min-w-[3rem] h-12">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                        </svg>
+                                    </span>
+                                    <section class="space-y-1 overflow-hidden">
+                                        <p class="text-xs text-slate-500 dark:text-slate-300">Email</p>
+                                        <h6 class="font-medium dark:text-white truncate"> <a
+                                                class="hover:text-[#3a9bdc] duration-300 transition"
+                                                href="mailto:aminfo.website.ir@gmail.com">aminfo.website.ir@gmail.com</a>
+                                        </h6>
+                                    </section>
+                                </section>
+                                <section class="flex">
+                                    <span
+                                        class="text-yellow-500 dark:bg-slate-700 shadow-md mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 min-w-[3rem] h-12">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                                        </svg>
+                                    </span>
+                                    <section class="space-y-1 overflow-hidden">
+                                        <p class="text-xs text-slate-500 dark:text-slate-300">Birthday</p>
+                                        <h6 class="font-medium dark:text-white truncate">Aug 09, 2005 <small>(Born in
+                                                Tehran)</small></h6>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="grid-cols-12 sm:px-20 px-4">
+                    <section class="pb-12">
+                        <h3 class="text-[35px] dark:text-white font-medium pb-5">What I do!</h3>
+                        <section class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                            <section
+                                class="flex gap-4 rounded-xl p-6 bg-[#fcf4ff] dark:bg-transparent dark:border-2 border-slate-700 md:col-span-1">
+                                <img src="./images/icon-1.svg" class="w-10 h-10 object-contain block" loading="lazy">
+                                <section class="space-y-2 break-all">
+                                    <h3 class="dark:text-white text-xl font-semibold">Web Design</h3>
+                                    <p class="leading-8 text-slate-500 dark:text-[#A6A6A6]">Designing the appearance of
+                                        your site according to your desired design. With clean coding and the latest
+                                        technologies
+                                        for website design.</p>
+                                </section>
+                            </section>
+
+                            <section
+                                class="flex gap-4 rounded-xl p-6 bg-[#fefaf0] dark:bg-transparent dark:border-2 border-slate-700 md:col-span-1">
+                                <img src="./images/icon-6.svg" class="w-10 h-10 object-contain block" loading="lazy">
+                                <section class="space-y-2 break-all">
+                                    <h3 class="dark:text-white text-xl font-semibold">Web Development</h3>
+                                    <p class="leading-8 text-slate-500 dark:text-[#A6A6A6]">Mastermind design of your
+                                        site. For all kinds of news, store, personal, blog, etc. sites. With the latest
+                                        technologies
+                                        in the world.</p>
+                                </section>
+                            </section>
+
+                            <section
+                                class="flex gap-4 rounded-xl p-6 bg-[#fcf4ff] dark:bg-transparent dark:border-2 border-slate-700 md:col-span-2 xl:col-span-1">
+                                <img src="./images/icon-5.svg" class="w-10 h-10 object-contain block" loading="lazy">
+                                <section class="space-y-2 break-all">
+                                    <h3 class="dark:text-white text-xl font-semibold">Full Stack</h3>
+                                    <p class="leading-8 text-slate-500 dark:text-[#A6A6A6]">I can design a complete site
+                                        for you. In addition to a beautiful appearance, I have the ability to design a
+                                        smart brain
+                                        with the fastest possible speed for your site.</p>
+                                </section>
+                            </section>
+
+                        </section>
+                    </section>
+                </section>
+
+                <!-- <section class="px-20">
+                    <section class="bg-[#F8FBFB] dark:bg-slate-900 max-w-full h-auto py-10 mb-12 rounded-xl">
+                        <h3 class="text-center dark:text-white text-4xl mb-3 font-semibold ">Clients</h3>
+                        <section class="flex justify-evenly items-center">
+                            <img src="./images/icon-4.svg" alt="" class="p-16">
+                            <img src="./images/icon-4.svg" alt="" class="p-16">
+                            <img src="./images/icon-4.svg" alt="" class="p-16">
+                            <img src="./images/icon-4.svg" alt="" class="p-16">
+                            <img src="./images/icon-4.svg" alt="" class="p-16">
+                        </section>
+                    </section>
+                </section> -->
+
+                <section
+                    class="bg-[#F8FBFB] dark:bg-slate-900 h-20 text-center flex items-center sm:rounded-b-2xl justify-center text-slate-400 dark:text-slate-400">
+                    <p>©2023 All Rights Reserved by aminfo.</p>
+                </section>
+            </section>
+        </section>
+
+        <section x-show="activeTab === 2"
+            class="container flex flex-col justify-center items-center gap-5 sm:mt-10 lg:mt-0"
+            x-transition:enter="transition ease-out duration-300 origin-top"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-cloak>
+            <section class="bg-white dark:bg-slate-800 sm:rounded-2xl sm:mx-10 w-full lg:w-10/12">
+                <section class="py-6 sm:py-12 px-4 sm:px-20">
+                    <h2
+                        class="relative salb text-black dark:text-white inline-block text-4xl font-semibold after:w-0 sm:after:w-64 after:h-[1.5px] after:absolute after:left-48 after:top-6 after:bg-gradient-to-r after:from-[#29c5f6] after:to-[#3a9bdc] after:rounded-full">
+                        Resium</h2>
+                </section>
+
+                <section class="px-4 sm:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 ">
+                    <section>
+                        <section class="flex items-center space-x-2 mb-4">
+                            <section class="text-[#3a9bdc]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                                </svg>
+
+                            </section>
+                            <h4 class="text-3xl dark:text-white font-medium">Education</h4>
+                        </section>
+                        <section
+                            class="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-slate-700 dark:border-2 bg-[#fff4f4] dark:bg-transparent">
+                            <span class="text-sm text-slate-500 dark:text-[#b7b7b7]">2022-2023</span>
+                            <h3 class="text-xl dark:text-white"> Dip in Network and Software </h3>
+                            <p class="dark:text-[#b7b7b7]">Shahid Dara Technical and Vocational College, Bandar Abbas,
+                                IR</p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <section class="flex items-center space-x-2 mb-4">
+                            <section class="text-[#3a9bdc]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                                </svg>
+                            </section>
+                            <h4 class="text-3xl dark:text-white font-medium">Experience</h4>
+                        </section>
+                        <section
+                            class="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-slate-700 dark:border-2 bg-[#eef5fa] dark:bg-transparent">
+                            <span class="text-sm text-slate-500 dark:text-[#b7b7b7]">2022 - Present</span>
+                            <h3 class="text-xl dark:text-white"> Naieb Shahid </h3>
+                            <p class="dark:text-[#b7b7b7]"> Designing the admin and users dashboard page </p>
+                        </section>
+                    </section>
+
+                    <section class="md:col-span-2 lg:col-span-1">
+                        <section class="flex items-center space-x-2 mb-4">
+                            <section class="text-[#3a9bdc]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+                                </svg>
+
+                            </section>
+                            <h4 class="text-3xl dark:text-white font-medium">Awards</h4>
+                        </section>
+                        <section
+                            class="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-slate-700 dark:border-2 bg-[#fcf4ff] dark:bg-transparent">
+                            <span class="text-sm text-slate-500 dark:text-[#b7b7b7]"> 2022 </span>
+                            <h3 class="text-xl dark:text-white"> Algorithmic thinking competitions </h3>
+                            <p class="dark:text-[#b7b7b7]">National official</p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="bg-[#f8fbfb] dark:bg-slate-900 dark:bg-opacity-60 py-12 px-4 sm:px-20">
+                    <section class="grid grid-cols-1 gap-8">
+                        <section class="col-span-1">
+                            <h4 class="text-3xl dark:text-white font-medium mb-8">Knowledges</h4>
+                            <section class="flex gap-x-3 gap-y-3 md:gap-y-3 md:gap-x-3 flex-wrap">
+                                <button
+                                    class="py-2 px-5 rounded-lg text-sm text-[#44566c] dark:text-[#a6a6a6] bg-[#edf2f2] dark:bg-slate-800 cursor-default">Media
+                                    Literacy</button>
+                                <button
+                                    class="py-2 px-5 rounded-lg text-sm text-[#44566c] dark:text-[#a6a6a6] bg-[#edf2f2] dark:bg-slate-800 cursor-default">Web
+                                    Design</button>
+                                <button
+                                    class="py-2 px-5 rounded-lg text-sm text-[#44566c] dark:text-[#a6a6a6] bg-[#edf2f2] dark:bg-slate-800 cursor-default">Web
+                                    Development</button>
+                                <button
+                                    class="py-2 px-5 rounded-lg text-sm text-[#44566c] dark:text-[#a6a6a6] bg-[#edf2f2] dark:bg-slate-800 cursor-default">Algorithmic
+                                    Thinking</button>
+                                <button
+                                    class="py-2 px-5 rounded-lg text-sm text-[#44566c] dark:text-[#a6a6a6] bg-[#edf2f2] dark:bg-slate-800 cursor-default">Time
+                                    Management</button>
+                                <button
+                                    class="py-2 px-5 rounded-lg text-sm text-[#44566c] dark:text-[#a6a6a6] bg-[#edf2f2] dark:bg-slate-800 cursor-default">Database
+                                    Analysis</button>
+                            </section>
+                        </section>
+
+                        <section class="col-span-1">
+                            <h4 class="text-3xl dark:text-white font-medium mb-6">Working Skills</h4>
+                            <section class="md:grid grid-cols-2 gap-4 md:gap-x-10">
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">PHP</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">70%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#4f5b93" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 70px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Laravel</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">40%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#f9322c" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 40px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Livewire</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">95%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#fb70a9" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 95px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">HTML</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">90%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#e44d26" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 90px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">CSS</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">85%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#006bc0" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 85px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Sass
+                                            (scss)</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">80%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#cc6699" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 80px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Javascript</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">35%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#f7df1e" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 35px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Tailwind
+                                            Css</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">70%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#38bdf8" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 70px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Bootstrap</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">80%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#7609f6" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 85px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">AlpineJS</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">65%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#2c313d" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 65px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">MySQL</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">65%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#4479a1" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 65px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Git</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">55%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#f05033" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 55px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">SEO</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">60%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#72cc50" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 60px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Linux
+                                            (Ubuntu)</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">20%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#d24413" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 20px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+
+                                <section class="md:col-span-1 mb-7">
+                                    <section class="flex justify-between py-1">
+                                        <span
+                                            class="text-base text-slate-500 font-semibold dark:text-[#A6A6A6]">Wordpress</span>
+                                        <span
+                                            class="text-base font-semibold text-slate-500 pr-5 dark:text-[#A6A6A6]">70%</span>
+                                    </section>
+                                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                                        <path class="rc-progress-line-trail" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0">
+                                        </path>
+                                        <path class="rc-progress-line-path" d="M 0.5,0.5 L 99.5,0.5"
+                                            stroke-linecap="round" stroke="#1b769c" stroke-width="1" fill-opacity="0"
+                                            style="stroke-dasharray: 70px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                                        </path>
+                                    </svg>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section
+                    class="bg-[#F8FBFB] dark:bg-slate-900 h-20 text-center flex items-center sm:rounded-b-2xl justify-center text-slate-400 dark:text-slate-400">
+                    <p>©2023 All Rights Reserved by aminfo.</p>
+                </section>
+            </section>
+        </section>
+
+        <!-- <section x-show="activeTab === 3"
+            class="container flex flex-col justify-center items-center gap-5 m-0 max-w-none lg:m-auto"
+            x-transition:enter="transition ease-out duration-300 origin-top"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-cloak>
+            <section class="bg-white dark:bg-slate-800 lg:rounded-2xl lg:mx-10 w-full lg:w-10/12">
+                <section class="py-6 lg:py-12 px-4 lg:px-20">
+                    <h2
+                        class="relative salb text-black dark:text-white inline-block text-4xl font-semibold after:w-0 lg:after:w-64 after:h-[1.5px] after:absolute after:left-48 after:top-6 after:bg-gradient-to-r after:from-[#29c5f6] after:to-[#3a9bdc] after:rounded-full">
+                        Portfolio</h2>
+                </section>
+
+                <ul
+                    class="mt-[40px] flex w-full justify-start md:justify-end flex-wrap font-medium pb-12 px-4 lg:px-20">
+                    <li class="text-[#3a9bdc] mr-4 md:mx-4">All</li>
+                    <li
+                        class="cursor-pointer transition-colors duration-300 text-[#44566c] dark:text-[#a6a6a6] hover:text-[#3a9bdc] dark:hover:text-[#3a9bdc] mr-4 md:mx-4">
+                        Video</li>
+                    <li
+                        class="cursor-pointer transition-colors duration-300 text-[#44566c] dark:text-[#a6a6a6] hover:text-[#3a9bdc] dark:hover:text-[#3a9bdc] mr-4 md:mx-4">
+                        Web Design</li>
+                    <li
+                        class="cursor-pointer transition-colors duration-300 text-[#44566c] dark:text-[#a6a6a6] hover:text-[#3a9bdc] dark:hover:text-[#3a9bdc] ml-0 mr-4 md:mx-4">
+                        Logo</li>
+                    <li
+                        class="cursor-pointer transition-colors duration-300 text-[#44566c] dark:text-[#a6a6a6] hover:text-[#3a9bdc] dark:hover:text-[#3a9bdc]">
+                        Graphic Design</li>
+                </ul>
+
+                <section class="flex w-auto min-h-[50vh] px-4 lg:px-20 pb-12">
+                    <section class="bg-clip-padding w-full grid grid-cols-6 gap-8">
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fff0f0] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg">
+                                <img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F1.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto">
+                            </section>
+                            <span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina
+                            </h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#e9faff] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg">
+                                <img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F4.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;">
+                            </section>
+                            <span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Video</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fff0f8] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F7.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fff3fc] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F2.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Web
+                                Design</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Aura Dione</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fffae9] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F5.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fff0f8] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F8.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Web
+                                Design</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fff0f0] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F3.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Logo</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#f4f4ff] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F6.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Video</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                        <section
+                            class="group rounded-lg p-6 dark:border-[2px] border-slate-700 cursor-pointer bg-[#fcf4ff] dark:bg-transparent col-span-6 sm:col-span-3 xl:col-span-2">
+                            <section class="overflow-hidden rounded-lg"><img alt="portfolio Image"
+                                    src="https://bostami-next.vercel.app/_next/image?url=%2Fimages%2Fwork_images%2Fsmall%2F9.jpg&w=640&q=75"
+                                    class="w-full transition duration-200 ease-in-out transform group-hover:scale-110 rounded-lg h-auto"
+                                    style="color: transparent;"></section><span
+                                class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Logo</span>
+                            <h2
+                                class="font-medium text-xl duration-300 transition group-hover:text-[#29c5f6] dark:group-hover:text-[#29c5f6] dark:text-white mt-2">
+                                Chul urina</h2>
+                        </section>
+                    </section>
+                </section>
+
+                <section
+                    class="bg-[#F8FBFB] dark:bg-slate-900 h-20 text-center flex items-center lg:rounded-b-2xl justify-center text-slate-400 dark:text-slate-400">
+                    <p>©2023 All Rights Reserved by aminfo.</p>
+                </section>
+            </section>
+        </section> -->
+
+        <!-- <section x-show="activeTab === 4"
+            class="container flex flex-col justify-center items-center gap-5 m-0 max-w-none lg:m-auto"
+            x-transition:enter="transition ease-out duration-300 origin-top"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-cloak>
+            <section class="bg-white dark:bg-slate-800 lg:rounded-2xl lg:mx-10 w-full lg:w-10/12">
+                <section class="py-6 px-4 lg:py-12 lg:px-20">
+                    <h2
+                        class="relative salb text-black dark:text-white inline-block text-4xl font-semibold after:w-0 lg:after:w-64 after:h-[1.5px] after:absolute after:left-48 after:top-6 after:bg-gradient-to-r after:from-[#29c5f6] after:to-[#3a9bdc] after:rounded-full">
+                        Blogs</h2>
+                </section>
+
+                <section
+                    class="bg-[#F8FBFB] dark:bg-slate-900 h-20 text-center flex items-center lg:rounded-b-2xl justify-center text-slate-400 dark:text-slate-400">
+                    <p>©2023 All Rights Reserved by aminfo.</p>
+                </section>
+            </section>
+        </section> -->
+
+        <section x-show="activeTab === 5"
+            class="container flex flex-col justify-center items-center gap-5 sm:mt-10 lg:mt-0"
+            x-transition:enter="transition ease-out duration-300 origin-top"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-cloak>
+            <section class="bg-white dark:bg-slate-800 sm:rounded-2xl sm:mx-10 w-full lg:w-10/12">
+                <section class="py-6 px-4 sm:py-12 sm:px-20">
+                    <h2
+                        class="relative salb text-black dark:text-white inline-block text-4xl font-semibold after:w-0 sm:after:w-64 after:h-[1.5px] after:absolute after:left-48 after:top-6 after:bg-gradient-to-r after:from-[#29c5f6] after:to-[#3a9bdc] after:rounded-full">
+                        Contact</h2>
+                </section>
+
+                <section class="lg:flex gap-x-6 xl:gap-x-14 px-4 sm:px-20 mb-12 items-stretch">
+                    <section class="w-full lg:w-[40%] xl:w-[30%] space-y-6">
+                        <section class="flex flex-wrap p-[30px] gap-2 rounded-xl dark:bg-slate-900 bg-[#fcf4ff]">
+                            <span class="w-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-blue-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+
+                            </span>
+                            <section class="space-y-2">
+                                <p class="text-xl font-semibold dark:text-white">Phone :</p>
+                                <p><a href="tel:+98 902 221 8241" class="text-gray-lite text-lg dark:text-[#A6A6A6]">+98
+                                        902 221 8241</a></p>
+                                <p><a href="tel:+98 921 546 4313" class="text-gray-lite text-lg dark:text-[#A6A6A6]">+98
+                                        921 546 4313</a></p>
+                            </section>
+                        </section>
+                        <section class="flex flex-wrap p-[30px] gap-2 rounded-xl dark:bg-slate-900 bg-[#eefbff]">
+                            <span class="w-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-yellow-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                            </span>
+                            <section class="space-y-2">
+                                <p class="text-xl font-semibold dark:text-white">Email :</p>
+                                <p>
+                                    <a href="mailto:aminfo.website.ir@gmail.com"
+                                        class="text-gray-lite text-lg dark:text-[#A6A6A6] ">aminfo.website.ir</a>
+                                </p>
+                            </section>
+                        </section>
+                        <section class="flex flex-wrap p-[30px] gap-2 rounded-xl dark:bg-slate-900 bg-[#f2f4ff]">
+                            <span class="w-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-red-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                </svg>
+
+                            </span>
+                            <section class="space-y-2">
+                                <p class="text-xl font-semibold dark:text-white">Address :</p>
+                                <p class="text-gray-lite text-lg dark:text-[#A6A6A6] ">Imam Ali Town</p>
+                                <p class="text-gray-lite text-lg dark:text-[#A6A6A6] ">Bandar Abbas, IRAN</p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="w-full mt-8 lg:mt-0 lg:w-[60%] xl:w-[70%]">
+                        <section
+                            class="bg-[#f8fbfb] dark:bg-slate-900 rounded-xl h-full md:p-12 p-8 flex flex-col justify-between">
+                            <h3 class="text-2xl">
+                                <span class="text-gray-lite dark:text-[#A6A6A6] ">I'm always ready to receive the
+                                    project from you</span>
+                                <br>
+                                <span class="font-semibold dark:text-white">I will try to answer you as soon as
+                                    possible.</span>
+                            </h3>
+                            <form id="myForm">
+                                <section class="relative z-0 w-full mt-[40px] mb-8 group">
+                                    <input type="text" name="name"
+                                        class="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-slate-400 appearance-none dark:text-white dark:border-slate-700 dark:focus:border-blue-400 focus:outline-none focus:ring-0 focus:border-blue-400 peer"
+                                        placeholder=" " required>
+                                    <label for="name"
+                                        class="peer-focus:font-medium absolute text-sm text-slate-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Name*</label>
+                                </section>
+                                <section class="relative z-0 w-full mb-8 group"><input type="email" name="user_email"
+                                        class="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-slate-400 appearance-none dark:text-white dark:border-slate-700 dark:focus:border-blue-400 focus:outline-none focus:ring-0 focus:border-blue-400 peer"
+                                        placeholder=" " id="user_email" required="">
+                                    <label for="user_email"
+                                        class="peer-focus:font-medium absolute text-sm text-slate-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Email*</label>
+                                </section>
+                                <section class="relative z-0 w-full mb-8 group"><input type="text" name="message"
+                                        class="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-slate-400 appearance-none dark:text-white dark:border-slate-700 dark:focus:border-blue-400 focus:outline-none focus:ring-0 focus:border-blue-400 peer"
+                                        placeholder=" " id="message" required=""><label for="message"
+                                        class="peer-focus:font-medium absolute text-sm text-slate-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Message*</label>
+                                </section>
+                            </form>
+                            <section class="transition-all duration-300 ease-in-out inline-block rounded-lg mt-3">
+                                <input type="submit"
+                                    class="hover:bg-gradient-to-r from-[#29c5f6] to-[#3a9bdc] transition ease-in duration-200 font-semibold cursor-pointer border-slate-400 hover:border-transparent px-6 py-2 rounded-lg border-[2px] hover:text-white text-slate-500 dark:text-slate-400 dark:hover:text-white"
+                                    value="Submit">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section
+                    class="bg-[#F8FBFB] dark:bg-slate-900 h-20 text-center flex items-center sm:rounded-b-2xl justify-center text-slate-400 dark:text-slate-400">
+                    <p>©2023 All Rights Reserved by aminfo.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <script defer src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
