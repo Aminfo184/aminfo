@@ -1548,14 +1548,14 @@ video {
 }
 
 .bg-light {
-  background-image: url(../src/images/light-bg.jpg);
+  background-image: url(../images/light-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Poppins";
 }
 
 .dark .dark\:bg-dark {
-  background-image: url(../src/images/dark-bg.jpg);
+  background-image: url(../images/dark-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Poppins";
